@@ -6,6 +6,7 @@ TagManager:
   tags:
   - object
   - objeto
+  - player
   layers:
   - Default
   - TransparentFX
