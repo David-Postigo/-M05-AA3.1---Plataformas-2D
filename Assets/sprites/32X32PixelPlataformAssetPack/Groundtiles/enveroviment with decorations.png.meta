@@ -1,0 +1,507 @@
+fileFormatVersion: 2
+guid: a005a3f1a2396ff4e9b4f32b013e378d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7469472415057890917
+    second: enveroviment with decorations_0
+  - first:
+      213: 1085764621344378647
+    second: enveroviment with decorations_1
+  - first:
+      213: -7282447495594105740
+    second: enveroviment with decorations_2
+  - first:
+      213: 3424052637868850190
+    second: enveroviment with decorations_3
+  - first:
+      213: 1132889193646583180
+    second: enveroviment with decorations_4
+  - first:
+      213: -7339112604062545111
+    second: enveroviment with decorations_5
+  - first:
+      213: 4942150892964665877
+    second: enveroviment with decorations_6
+  - first:
+      213: -6653417139566368716
+    second: enveroviment with decorations_7
+  - first:
+      213: 5590407111882090447
+    second: enveroviment with decorations_8
+  - first:
+      213: -6307029976076190630
+    second: enveroviment with decorations_9
+  - first:
+      213: 3026879590015755279
+    second: enveroviment with decorations_10
+  - first:
+      213: -3915876494561829341
+    second: enveroviment with decorations_11
+  - first:
+      213: -4961509462670873221
+    second: enveroviment with decorations_12
+  - first:
+      213: 5537549016107084152
+    second: enveroviment with decorations_13
+  - first:
+      213: -1097070315772310755
+    second: enveroviment with decorations_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: enveroviment with decorations_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 191
+        width: 96
+        height: 577
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56eca172695e8a760800000000000000
+      internalID: 7469472415057890917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enveroviment with decorations_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 159
+        width: 96
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71f0be4ab29611f00800000000000000
+      internalID: 1085764621344378647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enveroviment with decorations_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 127
+        width: 18
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4742ea9369c8fea90800000000000000
+      internalID: -7282447495594105740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enveroviment with decorations_3
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 127
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0c79649bbda48f20800000000000000
+      internalID: 3424052637868850190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enveroviment with decorations_4
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 127
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8dee2528b4d8bf00800000000000000
+      internalID: 1132889193646583180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enveroviment with decorations_5
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 95
+        width: 59
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92b824c88fb362a90800000000000000
+      internalID: -7339112604062545111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enveroviment with decorations_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 95
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51ad9817d0c069440800000000000000
+      internalID: 4942150892964665877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enveroviment with decorations_7
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 64
+        width: 19
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 438a6a5ec505aa3a0800000000000000
+      internalID: -6653417139566368716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enveroviment with decorations_8
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 95
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc7ac8526ad159d40800000000000000
+      internalID: 5590407111882090447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enveroviment with decorations_9
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 47
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5cfc3027ade878a0800000000000000
+      internalID: -6307029976076190630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enveroviment with decorations_10
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 58
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f04e4c433f2a10a20800000000000000
+      internalID: 3026879590015755279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enveroviment with decorations_11
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 0
+        width: 17
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32e175d431308a9c0800000000000000
+      internalID: -3915876494561829341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enveroviment with decorations_12
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 48
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7d63cf4e6d252bb0800000000000000
+      internalID: -4961509462670873221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enveroviment with decorations_13
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 31
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 879606fad7359dc40800000000000000
+      internalID: 5537549016107084152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enveroviment with decorations_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 8
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1b04ce3c5c66c0f0800000000000000
+      internalID: -1097070315772310755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      enveroviment with decorations_0: 7469472415057890917
+      enveroviment with decorations_1: 1085764621344378647
+      enveroviment with decorations_10: 3026879590015755279
+      enveroviment with decorations_11: -3915876494561829341
+      enveroviment with decorations_12: -4961509462670873221
+      enveroviment with decorations_13: 5537549016107084152
+      enveroviment with decorations_14: -1097070315772310755
+      enveroviment with decorations_2: -7282447495594105740
+      enveroviment with decorations_3: 3424052637868850190
+      enveroviment with decorations_4: 1132889193646583180
+      enveroviment with decorations_5: -7339112604062545111
+      enveroviment with decorations_6: 4942150892964665877
+      enveroviment with decorations_7: -6653417139566368716
+      enveroviment with decorations_8: 5590407111882090447
+      enveroviment with decorations_9: -6307029976076190630
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
