@@ -1,7 +1,8 @@
 using UnityEngine;
 
-public class jump : MonoBehaviour
+public class Crouch : MonoBehaviour
 {
+    grounddetected ground;
     Rigidbody2D rb;
     private InputSystem_Actions test;
     public int force;
@@ -11,13 +12,12 @@ public class jump : MonoBehaviour
         test = new InputSystem_Actions();
         test.Enable();
     }
-
-    // Update is called once per frame
     void Update()
     {
-        if(test.Player.Jump.WasPressedThisFrame())
+        if (test.Player.Sprint.WasPressedThisFrame())
         {
-            rb.AddForce(Vector2.up * force);
+            
+            rb.AddForce(Vector2.right * force);
         }
     }
 }
