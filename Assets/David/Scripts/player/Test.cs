@@ -14,7 +14,7 @@ public class Test : MonoBehaviour
     [Header("Dash")]
     [Tooltip("Place Force (recomended 2000+)")]
     public int force;
-
+    [Tooltip("bool that allows player to dash it has 1 use and recharges when touching ground)")]
     public bool candash;
 
     public Toggle dashToggle;

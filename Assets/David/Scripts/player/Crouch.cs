@@ -16,8 +16,11 @@ public class Crouch : MonoBehaviour
     {
         if (test.Player.Sprint.WasPressedThisFrame())
         {
-            
             rb.AddForce(Vector2.right * force);
+        }
+        if(test.Player.Crouch.WasPressedThisFrame())
+        {
+            transform.localScale = new Vector3(0.5f, 0.5f, 1f);
         }
     }
 }
