@@ -5,6 +5,7 @@ public class PlayerManager : MonoBehaviour
 {
     public int lifes = 3;
     public int coins = 0;
+
     [Header("Damage Settings")]
     public float invulnerabilityTime = 1.5f;
     public float blinkInterval = 0.1f;
@@ -19,11 +20,11 @@ public class PlayerManager : MonoBehaviour
     private void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
-        ogcolor = GetComponent<Color>();
+        ogcolor = sprite.color;
     }
+
     void Update()
     {
-
         if (isInvulnerable)
         {
             invulTimer -= Time.deltaTime;
@@ -31,19 +32,18 @@ public class PlayerManager : MonoBehaviour
 
             if (blinkTimer <= 0f)
             {
-                if (sprite.color == ogcolor)
-                    sprite.color = Color.red;
-                else
+                if (sprite.color == Color.red)
                     sprite.color = ogcolor;
+                else
+                    sprite.color = Color.red;
 
                 blinkTimer = blinkInterval;
             }
 
-
             if (invulTimer <= 0f)
             {
                 isInvulnerable = false;
-                sprite.color = ogcolor;
+                sprite.color = ogcolor; // restore correctly
             }
         }
     }
@@ -60,15 +60,16 @@ public class PlayerManager : MonoBehaviour
             return;
         }
 
-        // Activar invulnerabilidad
         isInvulnerable = true;
         invulTimer = invulnerabilityTime;
-        blinkTimer = 0f; // empieza parpadeo inmediato
+        blinkTimer = 0f;
     }
+
     void die()
     {
-        SceneManager.LoadScene("MainGame");
+        SceneManager.LoadScene("MainMenu");
     }
+
     public void grabcoin()
     {
         coins++;
