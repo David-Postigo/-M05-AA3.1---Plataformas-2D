@@ -1,10 +1,14 @@
 using NUnit.Framework.Internal;
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using static Unity.VisualScripting.Member;
 
 public class PlayerManager : MonoBehaviour
 {
-    public int lifes = 3;
+    [Header("Basic Settings")]
+    public float lifes = 3;
     public int coins = 0;
     public float pushforce = 1000;
     [Header("Damage Settings")]
@@ -18,12 +22,19 @@ public class PlayerManager : MonoBehaviour
     private SpriteRenderer sprite;
     private Color ogcolor;
     private Rigidbody2D rb;
+    [Header("Coin audio")]
+    public AudioClip sound;
+    public AudioClip sound2;
+    private AudioSource source;
+
+    public TextMeshProUGUI text;
 
     private void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
         ogcolor = sprite.color;
         rb = GetComponent<Rigidbody2D>();
+        source = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -53,6 +64,7 @@ public class PlayerManager : MonoBehaviour
 
     public void Damage()
     {
+        source.PlayOneShot(sound2);
         if (isInvulnerable) return;
 
         lifes--;
@@ -68,7 +80,7 @@ public class PlayerManager : MonoBehaviour
         blinkTimer = 0f;
     }
 
-    void die()
+    public void die()
     {
         SceneManager.LoadScene("MainMenu");
     }
@@ -76,12 +88,31 @@ public class PlayerManager : MonoBehaviour
     public void grabcoin()
     {
         coins++;
+        source.PlayOneShot(sound);
+        text.text = coins.ToString();
     }
 
     public void push()
     {
         float direction = sprite.flipX ? 1f : -1f;
 
-        rb.AddForce(new Vector2(-direction * pushforce, 2f), ForceMode2D.Impulse);
+        rb.AddForce(new Vector2(direction * pushforce, 2f), ForceMode2D.Impulse);
+    }
+    public void shield_damge()
+    {
+        if (isInvulnerable) return;
+
+        lifes = lifes - 0.5f;
+
+        if (lifes <= 0)
+        {
+            die();
+            return;
+        }
+
+        isInvulnerable = true;
+        invulTimer = invulnerabilityTime;
+        blinkTimer = 0f;
+        
     }
 }
