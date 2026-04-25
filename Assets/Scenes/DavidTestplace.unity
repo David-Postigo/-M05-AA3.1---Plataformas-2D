@@ -697,7 +697,7 @@ GameObject:
   - component: {fileID: 767422995}
   m_Layer: 0
   m_Name: Plataforma
-  m_TagString: Untagged
+  m_TagString: platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1642,6 +1642,18 @@ MonoBehaviour:
   force: 20
   candash: 0
   dashToggle: {fileID: 17159137}
+--- !u!114 &1391404400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854842263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d934a05281d764c4d89c8dc76412946a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1539854582
 GameObject:
   m_ObjectHideFlags: 0
@@ -2541,6 +2553,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4775822195757333289, guid: 52fb0a2e0afec0c4482481a0c69b8494, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1391404396}
+    - targetCorrespondingSourceObject: {fileID: 4775822195757333289, guid: 52fb0a2e0afec0c4482481a0c69b8494, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1391404400}
   m_SourcePrefab: {fileID: 100100000, guid: 52fb0a2e0afec0c4482481a0c69b8494, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
