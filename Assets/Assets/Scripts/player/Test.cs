@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class Test : MonoBehaviour
 {
-    grounddetected ground;
+    public grounddetected ground;
     Rigidbody2D rb;
     private InputSystem_Actions test;
 
@@ -21,6 +21,7 @@ public class Test : MonoBehaviour
 
     void Start()
     {
+        ground = GetComponent<grounddetected>();
         rb = GetComponent<Rigidbody2D>();
         test = new InputSystem_Actions();
         test.Enable();
@@ -40,7 +41,7 @@ public class Test : MonoBehaviour
         Vector2 dir = test.Player.Move.ReadValue<Vector2>();
         dir.y = 0;
 
-        if (test.Player.Sprint.WasPressedThisFrame())
+        if (test.Player.Sprint.WasPressedThisFrame() && !ground.isgrounded)
         {
             Dash(dir);
         }
