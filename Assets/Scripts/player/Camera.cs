@@ -32,12 +32,13 @@ public class CameraFollow2D : MonoBehaviour
             targetY = desiredY + verticalThreshold;
         }
 
+        //set the position of our target
         Vector3 targetPosition = new Vector3(
             target.position.x + offset.x,
             targetY,
             offset.z
         );
-
+        //follow the target with a smoothness
         transform.position = Vector3.SmoothDamp(
             transform.position,
             targetPosition,

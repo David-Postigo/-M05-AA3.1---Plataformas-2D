@@ -5,7 +5,7 @@ public class jump : MonoBehaviour
     grounddetected ground;
     Rigidbody2D rb;
     private InputSystem_Actions test;
-    public int force;
+    public int jumpforce;
     void Start()
     {
         ground = GetComponent<grounddetected>();
@@ -17,7 +17,7 @@ public class jump : MonoBehaviour
     {
         if(test.Player.Jump.WasPressedThisFrame() && ground.isgrounded)
         {
-            rb.AddForce(Vector2.up * force);
+            rb.AddForce(Vector2.up * jumpforce);
         }
     }
 }

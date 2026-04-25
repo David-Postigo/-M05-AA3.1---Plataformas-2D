@@ -8,10 +8,10 @@ public class grounddetected : MonoBehaviour
     public LayerMask layerMask;
     public Vector3 offset;
     public float radius;
-    Test test;
+    PlayerMovement test;
     private void Start()
     {
-        test = GetComponent<Test>();
+        test = GetComponent<PlayerMovement>();
     }
     void Update()
     {
