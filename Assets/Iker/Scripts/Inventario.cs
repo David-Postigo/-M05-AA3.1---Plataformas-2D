@@ -3,7 +3,9 @@ using UnityEngine;
 public class Inventario : MonoBehaviour
 {
     public GameObject inventario;
-    bool isActive = false;
+    public PlayerMovement playerMovement;
+
+    public bool isActive = false;
 
     void Update()
     {
@@ -11,6 +13,8 @@ public class Inventario : MonoBehaviour
         {
             isActive = !isActive;
             inventario.SetActive(isActive);
+
+            playerMovement.enabled = !isActive;
         }
     }
 }

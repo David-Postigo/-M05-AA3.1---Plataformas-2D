@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerMovement: MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
     public grounddetected ground;
     Rigidbody2D rb;

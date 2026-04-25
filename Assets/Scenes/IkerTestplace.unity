@@ -320,6 +320,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ground: {fileID: 0}
   speed: 4
+  jumpforce: 0
   force: 0
   candash: 0
   dashToggle: {fileID: 0}
@@ -336,6 +337,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventario: {fileID: 953620578}
+  playerMovement: {fileID: 74159851}
+  isActive: 0
 --- !u!1 &602499228
 GameObject:
   m_ObjectHideFlags: 0
