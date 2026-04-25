@@ -1,3 +1,4 @@
+using NUnit.Framework.Internal;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -5,7 +6,7 @@ public class PlayerManager : MonoBehaviour
 {
     public int lifes = 3;
     public int coins = 0;
-
+    public float pushforce = 1000;
     [Header("Damage Settings")]
     public float invulnerabilityTime = 1.5f;
     public float blinkInterval = 0.1f;
@@ -16,11 +17,13 @@ public class PlayerManager : MonoBehaviour
 
     private SpriteRenderer sprite;
     private Color ogcolor;
+    private Rigidbody2D rb;
 
     private void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
         ogcolor = sprite.color;
+        rb = GetComponent<Rigidbody2D>();
     }
 
     void Update()
@@ -73,5 +76,12 @@ public class PlayerManager : MonoBehaviour
     public void grabcoin()
     {
         coins++;
+    }
+
+    public void push()
+    {
+        float direction = sprite.flipX ? 1f : -1f;
+
+        rb.AddForce(new Vector2(-direction * pushforce, 2f), ForceMode2D.Impulse);
     }
 }
