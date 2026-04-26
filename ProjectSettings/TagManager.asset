@@ -8,6 +8,11 @@ TagManager:
   - objeto
   - llave
   - escudo
+  - platform
+  - pocion
+  - espada
+  - Slot
+  - botas
   layers:
   - Default
   - TransparentFX
