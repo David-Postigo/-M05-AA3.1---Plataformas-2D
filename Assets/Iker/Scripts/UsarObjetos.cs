@@ -5,8 +5,8 @@ public class UsarObjetos : MonoBehaviour
     public Transform slotEquipado;
     public PlayerMovement player;
 
-    private int speedBase;
-    private int jumpBase;
+    private float speedBase;
+    private float jumpBase;
 
     void Start()
     {

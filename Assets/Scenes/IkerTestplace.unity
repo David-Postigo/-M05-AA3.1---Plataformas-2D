@@ -291,7 +291,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1.2}
+    oldSize: {x: 1.25, y: 1.5}
     newSize: {x: 1, y: 1.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -441,7 +441,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36e2714e6ae81284f9b6a166d6e7c896, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slotEquipado: {fileID: 0}
+  slotEquipado: {fileID: 347529778}
   player: {fileID: 74159851}
 --- !u!1 &322080982
 GameObject:
