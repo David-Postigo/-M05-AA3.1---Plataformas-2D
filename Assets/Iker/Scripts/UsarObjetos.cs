@@ -4,6 +4,7 @@ public class UsarObjetos : MonoBehaviour
 {
     public Transform slotEquipado;
     public PlayerMovement player;
+    public PlayerManager playerManager;
 
     private float baseSpeed;
     private float baseJump;
@@ -19,16 +20,21 @@ public class UsarObjetos : MonoBehaviour
         player.speed = baseSpeed;
         player.jumpforce = baseJump;
 
-        if (slotEquipado != null && slotEquipado.childCount > 0)
+        playerManager.shieldactive = false;
+
+        if (slotEquipado.childCount > 0)
         {
-            Transform child = slotEquipado.GetChild(0);
+            GameObject item = slotEquipado.GetChild(0).gameObject;
 
-            Debug.Log("Item equipado: " + child.name + " | Tag: " + child.tag);
-
-            if (child.CompareTag("botas"))
+            if (item.CompareTag("botas"))
             {
                 player.speed = baseSpeed * 1.5f;
                 player.jumpforce = baseJump * 1.5f;
+            }
+
+            if (item.CompareTag("escudo"))
+            {
+                playerManager.shieldactive = true;
             }
         }
     }
