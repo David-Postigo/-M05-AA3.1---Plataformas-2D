@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 687d82dd73d14e3429c9c514a20d2cd6
+guid: 96c8639d34d40df4ea45504b51b46b2e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6576206273875059293
-    second: scithersword_0
+      213: -3337038689812066966
+    second: pixil-frame-0_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 1
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: scithersword_0
+      name: pixil-frame-0_0
       rect:
         serializedVersion: 2
-        x: 21
-        y: 13
-        width: 56
-        height: 71
+        x: 0
+        y: 0
+        width: 16
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3ad5bf37c3f9cb4a0800000000000000
-      internalID: -6576206273875059293
+      spriteID: a6d4404fdf470b1d0800000000000000
+      internalID: -3337038689812066966
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      scithersword_0: -6576206273875059293
+      pixil-frame-0_0: -3337038689812066966
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

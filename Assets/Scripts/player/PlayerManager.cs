@@ -7,6 +7,7 @@ using static Unity.VisualScripting.Member;
 
 public class PlayerManager : MonoBehaviour
 {
+    
     [Header("Basic Settings")]
     public float lifes = 3;
     public int coins = 0;
@@ -14,6 +15,7 @@ public class PlayerManager : MonoBehaviour
     [Header("Damage Settings")]
     public float invulnerabilityTime = 1.5f;
     public float blinkInterval = 0.1f;
+    public bool shieldactive;
 
     private bool isInvulnerable = false;
     private float invulTimer = 0f;
@@ -28,6 +30,7 @@ public class PlayerManager : MonoBehaviour
     private AudioSource source;
 
     public TextMeshProUGUI text;
+    public TextMeshProUGUI texthp;
 
     private void Start()
     {
@@ -35,6 +38,7 @@ public class PlayerManager : MonoBehaviour
         ogcolor = sprite.color;
         rb = GetComponent<Rigidbody2D>();
         source = GetComponent<AudioSource>();
+        texthp.text = lifes.ToString();
     }
 
     void Update()
@@ -66,9 +70,13 @@ public class PlayerManager : MonoBehaviour
     {
         source.PlayOneShot(sound2);
         if (isInvulnerable) return;
-
-        lifes--;
-
+        if (shieldactive)
+        {
+            lifes -= 0.5f;
+        }
+        else { 
+            lifes--;
+        }
         if (lifes <= 0)
         {
             die();
@@ -78,6 +86,7 @@ public class PlayerManager : MonoBehaviour
         isInvulnerable = true;
         invulTimer = invulnerabilityTime;
         blinkTimer = 0f;
+        texthp.text = lifes.ToString();
     }
     public void heal()
     {
