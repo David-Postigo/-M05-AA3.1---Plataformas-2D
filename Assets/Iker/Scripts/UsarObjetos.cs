@@ -43,6 +43,17 @@ public class UsarObjetos : MonoBehaviour
             {
                 tieneLlave = true;
             }
+
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                if (item.CompareTag("pocion"))
+                {
+                    playerManager.heal();   
+                    Destroy(item);          
+
+                    Debug.Log("Poción usada");
+                }
+            }
         }
     }
 }

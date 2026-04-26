@@ -28,6 +28,11 @@ public class ObjectCollected : MonoBehaviour
                 inventario.AddItem("llave");
             }
 
+            if (CompareTag("pocion"))
+            {
+                inventario.AddItem("pocion");
+            }
+
             Destroy(gameObject);
         }
     }
