@@ -91,6 +91,7 @@ public class PlayerManager : MonoBehaviour
     public void heal()
     {
         lifes++;
+        texthp.text = lifes.ToString();
     }
     public void die()
     {
