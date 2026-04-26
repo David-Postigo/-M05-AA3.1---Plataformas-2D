@@ -79,7 +79,10 @@ public class PlayerManager : MonoBehaviour
         invulTimer = invulnerabilityTime;
         blinkTimer = 0f;
     }
-
+    public void heal()
+    {
+        lifes++;
+    }
     public void die()
     {
         SceneManager.LoadScene("MainMenu");
