@@ -6,6 +6,8 @@ public class UsarObjetos : MonoBehaviour
     public PlayerMovement player;
     public PlayerManager playerManager;
 
+    public bool tieneLlave;
+
     private float baseSpeed;
     private float baseJump;
 
@@ -19,10 +21,10 @@ public class UsarObjetos : MonoBehaviour
     {
         player.speed = baseSpeed;
         player.jumpforce = baseJump;
-
         playerManager.shieldactive = false;
+        tieneLlave = false;
 
-        if (slotEquipado.childCount > 0)
+        if (slotEquipado != null && slotEquipado.childCount > 0)
         {
             GameObject item = slotEquipado.GetChild(0).gameObject;
 
@@ -35,6 +37,11 @@ public class UsarObjetos : MonoBehaviour
             if (item.CompareTag("escudo"))
             {
                 playerManager.shieldactive = true;
+            }
+
+            if (item.CompareTag("llave"))
+            {
+                tieneLlave = true;
             }
         }
     }
