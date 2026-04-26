@@ -7,41 +7,30 @@ public class InventarioObject : MonoBehaviour
 
     public Sprite escudoSprite;
     public Sprite llaveSprite;
-    public Sprite pocionSprite;
     public Sprite botasSprite;
 
     public GameObject itemPrefab;
 
     public void AddItem(string tag)
     {
-        Sprite spriteToAdd = null;
-
-        if (tag == "escudo")
-            spriteToAdd = escudoSprite;
-
-        if (tag == "llave")
-            spriteToAdd = llaveSprite;
-
-        if (tag == "llave")
-            spriteToAdd = llaveSprite;
-
-        if (tag == "llave")
-            spriteToAdd = llaveSprite;
-
-        if (spriteToAdd == null)
-            return;
-
         for (int i = 0; i < slots.Length; i++)
         {
-            // si el slot está vacío
-            if (slots[i].transform.childCount == 0)
+            Transform slot = slots[i].transform;
+
+            if (slot.childCount == 0)
             {
-                GameObject item = Instantiate(itemPrefab, slots[i].transform);
+                GameObject newItem = Instantiate(itemPrefab, slot);
 
-                item.GetComponent<RectTransform>().localPosition = Vector3.zero;
+                newItem.tag = tag;
 
-                Image img = item.GetComponent<Image>();
-                img.sprite = spriteToAdd;
+                Image img = newItem.GetComponent<Image>();
+
+                if (tag == "escudo")
+                    img.sprite = escudoSprite;
+                else if (tag == "llave")
+                    img.sprite = llaveSprite;
+                else if (tag == "botas")
+                    img.sprite = botasSprite;
 
                 return;
             }

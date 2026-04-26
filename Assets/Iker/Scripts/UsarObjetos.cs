@@ -5,34 +5,30 @@ public class UsarObjetos : MonoBehaviour
     public Transform slotEquipado;
     public PlayerMovement player;
 
-    private float speedBase;
-    private float jumpBase;
+    private float baseSpeed;
+    private float baseJump;
 
     void Start()
     {
-        speedBase = player.speed;
-        jumpBase = player.jumpforce;
+        baseSpeed = player.speed;
+        baseJump = player.jumpforce;
     }
 
     void Update()
     {
-        player.speed = speedBase;
-        player.jumpforce = jumpBase;
+        player.speed = baseSpeed;
+        player.jumpforce = baseJump;
 
         if (slotEquipado != null && slotEquipado.childCount > 0)
         {
             Transform child = slotEquipado.GetChild(0);
 
-            if (child == null) return;
+            Debug.Log("Item equipado: " + child.name + " | Tag: " + child.tag);
 
-            GameObject item = child.gameObject;
-
-            if (item == null) return;
-
-            if (item.CompareTag("botas"))
+            if (child.CompareTag("botas"))
             {
-                player.speed = (int)(speedBase * 1.5f);
-                player.jumpforce = (int)(jumpBase * 1.5f);
+                player.speed = baseSpeed * 1.5f;
+                player.jumpforce = baseJump * 1.5f;
             }
         }
     }

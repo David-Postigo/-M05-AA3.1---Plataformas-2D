@@ -224,6 +224,7 @@ GameObject:
   - component: {fileID: 74159851}
   - component: {fileID: 74159852}
   - component: {fileID: 74159853}
+  - component: {fileID: 74159854}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -408,7 +409,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d47cca4fb4198c42abb6d438a1418da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ground: {fileID: 0}
+  ground: {fileID: 74159854}
   speed: 4
   jumpforce: 0
   force: 0
@@ -441,8 +442,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36e2714e6ae81284f9b6a166d6e7c896, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slotEquipado: {fileID: 347529778}
+  slotEquipado: {fileID: 1296805451}
   player: {fileID: 74159851}
+--- !u!114 &74159854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74159844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a317c54a87c72a842b1999987e936dc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isgrounded: 0
+  distance: 0
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  offset: {x: 0, y: 0, z: 0}
+  radius: 0
 --- !u!1 &322080982
 GameObject:
   m_ObjectHideFlags: 0
@@ -480,7 +500,6 @@ MonoBehaviour:
   - {fileID: 745733302}
   escudoSprite: {fileID: -4450030773700280910, guid: ecc1304112273114e81ff10d2fbed7b5, type: 3}
   llaveSprite: {fileID: -4091781277937671210, guid: 4e9ad3c3afd1790409492944528c4150, type: 3}
-  pocionSprite: {fileID: -794934394105577666, guid: 4f76edfc08718754594bbc2ed9ab1ae8, type: 3}
   botasSprite: {fileID: -9078410610214793183, guid: 7101a7935c8f93c449bea2b7f09e2136, type: 3}
   itemPrefab: {fileID: 8216808205480018572, guid: 47179b61df61e54499ffab5634ff55d4, type: 3}
 --- !u!4 &322080984
@@ -511,7 +530,7 @@ GameObject:
   - component: {fileID: 347529776}
   - component: {fileID: 347529775}
   m_Layer: 0
-  m_Name: 85023375-colored-cartoon-illustration-of-boots_0
+  m_Name: botas
   m_TagString: botas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -547,7 +566,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
