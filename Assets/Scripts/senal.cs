@@ -1,28 +1,25 @@
 using UnityEngine;
-using TMPro; // si usas TextMeshPro
+using TMPro;
 
 public class senal : MonoBehaviour
 {
-    public GameObject textoUI; // arrastras el texto desde el Canvas
-
+    public TextMeshProUGUI txt;
     void Start()
     {
-        textoUI.SetActive(false); // oculto al inicio
+        txt.gameObject.SetActive(false);
     }
-
-    void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("player"))
         {
-            textoUI.SetActive(true);
+            txt.gameObject.SetActive(true);
         }
     }
-
-    void OnTriggerExit(Collider other)
+    private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("player"))
         {
-            textoUI.SetActive(false);
+            txt.gameObject.SetActive(false);
         }
     }
 }
